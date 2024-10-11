@@ -1,7 +1,5 @@
 #include "textflag.h"
 
-// L2NormUnitary returns the L2-norm of x.
-// func L2Norm(x []float64) (norm float64)
 TEXT ·L2Norm(SB), NOSPLIT, $0
 	MOVQ x_len+8(FP), DI // DI = len(x)
 	MOVQ x_base+0(FP), R8
